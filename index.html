@@ -7,8 +7,22 @@
     <title>Todo App</title>
 </head>
 <body>
-    
-
+    <div class="container">
+        <h2>Todo App</h2>
+        <div class="input__section">
+            <input type="text" placeholder="Add todo ..." id="task__input">
+            <input type="date"  id="date__input">
+            <button id="add__button">Add</button>
+        </div>
+        <div class="todos__operator">
+            <div>
+                <button class="filter__todos">All</button>
+                <button class="filter__todos">Pending</button>
+                <button class="filter__todos">Completed</button>
+            </div>
+            <button>Delete All</button>
+        </div>
+    </div>
     <script src="./js/app.js"></script>
 </body>
 </html>
