@@ -1,52 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Todo App</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h2>Todo App</h2>
-        <div class="input__section">
-            <input type="text" placeholder="Add todo ..." id="task__input">
-            <input type="date"  id="date__input">
-            <button id="add__button">Add</button>
+      <h2>Todo App</h2>
+      <div class="input__section">
+        <input type="text" placeholder="Add todo ..." id="task__input" />
+        <input type="date" id="date__input" />
+        <button id="add__button">Add</button>
+      </div>
+      <div class="todos__operator">
+        <div>
+          <button class="filter__todos">All</button>
+          <button class="filter__todos">Pending</button>
+          <button class="filter__todos">Completed</button>
         </div>
-        <div class="todos__operator">
-            <div>
-                <button class="filter__todos">All</button>
-                <button class="filter__todos">Pending</button>
-                <button class="filter__todos">Completed</button>
-            </div>
-            <button>Delete All</button>
-        </div>
+        <button id="delete__all--button">Delete All</button>
+      </div>
     </div>
     <div class="table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Task</th>
-                    <th>Date</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>text</td>
-                    <td>date</td>
-                    <td>pending</td>
-                    <td>
-                        <button>Edit</button>
-                        <button>Do</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
     <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>
